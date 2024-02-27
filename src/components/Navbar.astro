@@ -1,0 +1,41 @@
+---
+import NavbarButton from "./NavbarButton.astro";
+
+import HomeIcon from "../components/icons/HomeIcon.astro";
+import GithubIcon from "../components/icons/GithubIcon.astro";
+import LogoutIcon from "../components/icons/LogoutIcon.astro";
+import BlogIcon from "../components/icons/BlogIcon.astro";
+---
+
+<div
+  class="fixed z-50 w-full h-12 md:h-16 md:max-w-lg -translate-x-1/2 bg-white md:border border-gray-200 md:rounded-full md:shadow-2xl bottom-0 md:bottom-8 left-1/2 dark:bg-[#505050] md:dark:border-[#292929]"
+>
+  <div class="grid h-full max-w-lg grid-cols-4 mx-auto">
+    <NavbarButton rounded="rounded-s-full" go="/">
+      <slot>
+        <HomeIcon />
+      </slot>
+    </NavbarButton>
+
+    <NavbarButton go="/blog">
+      <slot>
+        <BlogIcon />
+      </slot>
+    </NavbarButton>
+
+    <NavbarButton go="https://github.com/sebascm-dev">
+      <slot>
+        <GithubIcon />
+      </slot>
+    </NavbarButton>
+
+    <NavbarButton
+      rounded="rounded-e-full"
+      go="https://portfolio-scm.vercel.app/"
+    >
+      <slot>
+        <LogoutIcon />
+      </slot>
+    </NavbarButton>
+  </div>
+</div>
