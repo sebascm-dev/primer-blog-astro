@@ -1,0 +1,11 @@
+---
+const { go, rounded } = Astro.props;
+---
+
+<a
+  href=`${go}`
+  data-tooltip-target="tooltip-home"
+  class=`inline-flex flex-col items-center justify-center px-5 ${rounded} group transition duration-300 hover:bg-gray-50 dark:hover:bg-[#454545]`
+>
+  <slot />
+</a>
