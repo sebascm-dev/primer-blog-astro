@@ -1,0 +1,37 @@
+---
+import CooperatorIndividual from "../components/CooperatorIndividual.astro";
+---
+
+<h1 class="flex items-center justify-center mt-8 text-3xl font-extrabold dark:text-white">Cooperadores<span class="bg-blue-100 text-blue-800 text-xs mt-2 font-semibold px-[.5rem] py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-2">FUENTES</span></h1>
+
+<div id="cooperatorsContainer" class="w-full inline-flex mt-5 flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
+  <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+
+    <CooperatorIndividual who="https://avatars.githubusercontent.com/u/12685053?v=4"/>
+    <CooperatorIndividual who="https://avatars.githubusercontent.com/u/56528591?v=4"/>
+    <CooperatorIndividual who="https://avatars.githubusercontent.com/u/140653042?v=4"/>
+    <CooperatorIndividual who="https://avatars.githubusercontent.com/u/6751108?v=4"/>
+    <CooperatorIndividual who="https://avatars.githubusercontent.com/u/17043402?v=4"/>
+    <CooperatorIndividual who="https://avatars.githubusercontent.com/u/123853174?v=4"/>
+    <CooperatorIndividual who="https://avatars.githubusercontent.com/u/1561955?v=4"/>
+    <CooperatorIndividual who="https://avatars.githubusercontent.com/u/49437724?v=4"/>
+    <CooperatorIndividual who="https://avatars.githubusercontent.com/u/76450853?v=4"/>
+    <CooperatorIndividual who="https://avatars.githubusercontent.com/u/57383340?v=4"/>
+    <CooperatorIndividual who="https://avatars.githubusercontent.com/u/62910118?v=4"/>
+    <CooperatorIndividual who="https://avatars.githubusercontent.com/u/3819912?v=4"/>
+    <CooperatorIndividual who="https://avatars.githubusercontent.com/u/109766973?v=4"/>
+    
+  </ul>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        // Obtener el contenedor de cooperadores y su primer ul
+        const cooperatorsContainer: HTMLElement = document.getElementById('cooperatorsContainer') as HTMLElement;
+        const firstCooperatorsList: HTMLUListElement = cooperatorsContainer.querySelector('ul') as HTMLUListElement;
+
+        // Clonar el primer ul y agregarlo después del primer ul
+        const secondCooperatorsList: HTMLUListElement = firstCooperatorsList.cloneNode(true) as HTMLUListElement;
+        cooperatorsContainer.appendChild(secondCooperatorsList);
+    });
+</script>
