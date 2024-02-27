@@ -8,7 +8,7 @@ import BlogIcon from "../components/icons/BlogIcon.astro";
 ---
 
 <div
-  class="fixed z-50 w-full h-12 md:h-16 md:max-w-lg -translate-x-1/2 bg-white md:border border-gray-200 md:rounded-full md:shadow-2xl bottom-0 md:bottom-8 left-1/2 dark:bg-[#505050] md:dark:border-[#292929] animate-fade animate-delay-300 animate-ease-in"
+  class="fixed z-50 w-full h-12 md:h-16 md:max-w-lg -translate-x-1/2 bg-white md:border border-gray-200 md:rounded-full md:shadow-2xl bottom-0 md:bottom-8 left-1/2 dark:bg-[#505050] md:dark:border-[#292929]"
 >
   <div class="grid h-full max-w-lg grid-cols-4 mx-auto">
     <NavbarButton rounded="rounded-s-full" go="/">
@@ -17,7 +17,7 @@ import BlogIcon from "../components/icons/BlogIcon.astro";
       </slot>
     </NavbarButton>
 
-    <NavbarButton go="/blog">
+    <NavbarButton go="/posts">
       <slot>
         <BlogIcon />
       </slot>

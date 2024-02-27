@@ -1,0 +1,44 @@
+---
+import Layout from "./Layout.astro";
+
+const { frontmatter } = Astro.props;
+
+const { title, description, pubDate, image, tags, tLectura } =
+  frontmatter;
+---
+
+<Layout title=`${title} - ${description}`>
+  <main class="max-w-7xl w-[80%]">
+    <header class="mt-10">
+      <div>
+        <img
+          class="w-full rounded-sm shadow-md"
+          src={image.url}
+          alt={image.alt}
+        />
+        <div class="mt-5">
+          <h1 class="text-5xl font-extrabold dark:text-white">{title}</h1>
+          <div class="mt-2 text-gray-400">
+            <span>{pubDate} · {tLectura}</span>
+          </div>
+          <span>
+            {
+              tags.map((tag: string) => (
+                <span class="bg-gray-100 text-gray-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded opacity-90 dark:bg-gray-700 dark:text-gray-300">
+                  #{tag}
+                </span>
+              ))
+            }
+          </span>
+        </div>
+        <p class="mt-7 text-gray-500 dark:text-gray-100">{description}</p>
+      </div>
+    </header>
+    <div class="mt-14">
+      <div>
+        <slot />
+      </div>
+      <div></div>
+    </div>
+  </main>
+</Layout>
