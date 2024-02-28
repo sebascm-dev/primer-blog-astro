@@ -10,6 +10,8 @@ pubDate: "27 de febrero 2024"
 tLectura: "2 minutos de lectura"
 ---
 
+
+
 ## Deshacer el último commit (no publicado)
 
 A veces **queremos tirar para atrás el último commit** que hemos hecho porque hemos añadido más archivos de la cuenta, queremos hacer commit de otra cosa o, simplemente, porque ahora no tocaba.
@@ -33,6 +35,8 @@ git reset --hard HEAD~1
 ```
 
 Es simplemente el mismo comando pero cambiamos `--soft` por `--hard`. Esto eliminará los cambios de los que habíamos hecho commit anteriormente. **¡⚠️ Asegúrate que eso es lo que quieres antes de hacerlo!**
+
+
 
 ## Si quieres arreglar el último commit (y no has hecho push)
 
