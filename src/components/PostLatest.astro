@@ -1,0 +1,37 @@
+---
+const postList = await Astro.glob("../pages/posts/*.md");
+
+const postOrdenados = postList.sort((a, b) => b.frontmatter.id - a.frontmatter.id)
+
+const recentPosts = postOrdenados.slice(0, 5);
+---
+
+<div class="flex flex-col gap-3 mt-10">
+  {
+    recentPosts.map((post) => (
+      <a
+        href={post.url}
+        class="p-2 rounded-md flex justify-center items-center gap-2 cursor-pointer bg-zinc-500 bg-opacity-15 hover:bg-zinc-800 hover:bg-opacity-50 transition-all duration-300 ease-in"
+      >
+        <div class="w-[20%] md:w-[8%]">
+          <img
+            class="aspect-square object-cover rounded-lg"
+            src={post.frontmatter.image.url}
+            alt={post.frontmatter.image.alt}
+          />
+        </div>
+        <div class="w-[92%] flex flex-col justify-between">
+          <header>
+            <h3 class="text-xs md:text-lg font-bold">{post.frontmatter.title}.</h3>
+            <p class="text-xs md:text-base overflow-hidden whitespace-normal line-clamp-1">
+              {post.frontmatter.description}
+            </p>
+          </header>
+          <footer class="text-right">
+            <span class="text-xs text-zinc-300">{post.frontmatter.pubDate}</span>
+          </footer>
+        </div>
+      </a>
+    ))
+  }
+</div>
