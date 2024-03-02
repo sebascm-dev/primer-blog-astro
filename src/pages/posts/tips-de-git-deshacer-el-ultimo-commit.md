@@ -1,6 +1,8 @@
 ---
 layout: "../../layouts/BlogPostLayout.astro"
 
+id: 1
+
 image:
   url: "/postsImages/post-1.webp"
   alt: "Fondo del post de javascript"

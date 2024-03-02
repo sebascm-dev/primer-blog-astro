@@ -1,6 +1,8 @@
 ---
 layout: "../../layouts/BlogPostLayout.astro"
 
+id: 2
+
 image:
   url: "/postsImages/post-2.webp"
   alt: "Fondo de la imagen"
