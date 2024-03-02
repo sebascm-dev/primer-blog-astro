@@ -7,7 +7,7 @@ const { title, description, pubDate, image, tags, tLectura } = frontmatter;
 ---
 
 <Layout title=`${title} - ${description}`>
-  <main class="max-w-[800px]">
+  <main class="max-w-[800px] w-[90%]">
     <header class="mt-10">
       <div>
         <img
@@ -63,7 +63,7 @@ const { title, description, pubDate, image, tags, tLectura } = frontmatter;
         prose-h3:font-bold prose-h3:text-2xl
         prose-h4:font-bold prose-h4:text-2xl
         prose-p:text-pretty
-        prose-blockquote:bg-[#898a7e50] prose-blockquote:rounded-md prose-blockquote:px-4 prose-blockquote:shadow-xl prose-blockquote:text-amber-200 prose-blockquote:border-l-1 prose-blockquote:border-amber-200
+        prose-blockquote:bg-[#898a7e50] prose-blockquote:rounded-md prose-blockquote:px-4 prose-blockquote:py-[1px] prose-blockquote:shadow-xl prose-blockquote:text-amber-200 prose-blockquote:border-l-1 prose-blockquote:border-amber-200
         prose-a:bg-gray-100 prose-a:text-gray-800 prose-a:text-xs prose-a:font-medium prose-a:me-2 prose-a:px-2 prose-a:py-0.5 prose-a:rounded prose-a:opacity-90 prose-a:dark:bg-gray-900 prose-a:dark:text-gray-300"
       >
         <slot />
