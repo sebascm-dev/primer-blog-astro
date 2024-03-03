@@ -22,7 +22,7 @@ const recentPosts = postOrdenados.slice(0, 5);
         </div>
         <div class="w-[92%] flex flex-col justify-between">
           <header>
-            <h3 class="text-xs md:text-lg font-bold">{post.frontmatter.title}.</h3>
+            <h3 class="text-xs md:text-lg font-bold overflow-hidden whitespace-normal line-clamp-1">{post.frontmatter.title}.</h3>
             <p class="text-xs md:text-base overflow-hidden whitespace-normal line-clamp-1">
               {post.frontmatter.description}
             </p>
