@@ -15,7 +15,7 @@ tags: ['DesarrolladoresJunior', 'ConsejosProfesionales', 'Programación', 'Desar
 
 pubDate: "02 de Marzo 2024"
 
-tLectura: "2 minuto de lectura"
+tLectura: "3 minutos de lectura"
 
 user: 'sebascm-dev'
 userImage: "https://avatars.githubusercontent.com/u/43911461?v=4"
