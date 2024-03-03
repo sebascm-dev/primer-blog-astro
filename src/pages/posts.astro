@@ -11,7 +11,7 @@ const numPost = postList.length;
 ---
 
 <Layout title="Sebastián BlogSite 🌎">
-  <main class="max-w-7xl w-[80%]">
+  <main class="max-w-7xl w-[80%] mb-32">
     <div class="flex flex-row justify-between mt-6 md:mt-16">
       <h1
         class="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white md:text-4xl lg:text-4xl"
@@ -38,7 +38,7 @@ const numPost = postList.length;
           <div class="">
             <a href={post.url}>
               <article class="overflow-hidden rounded my-4 shadow-xl">
-                <div class="sm:flex sm:flex-wrap md:h-[270px]">
+                <div class="sm:flex sm:flex-wrap">
                   <div class="sm:w-1/2 h-32 sm:h-auto relative">
                     <img
                       class="w-full h-full absolute inset-0 object-cover"
@@ -62,7 +62,7 @@ const numPost = postList.length;
                         ))}
                       </span>
                     </div>
-                    <div class="flex items-center mt-5">
+                    <div class="flex items-center mt-10">
                       <img
                         class="h-10 w-10 object-cover rounded"
                         src={post.frontmatter.userImage}
