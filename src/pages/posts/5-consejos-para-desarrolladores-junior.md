@@ -22,7 +22,6 @@ userImage: "https://avatars.githubusercontent.com/u/43911461?v=4"
 ---
 
 
-
 ### 1️⃣ NO PUEDES SABERLO TODO
 
 Eres junior. Acabas de empezar. ¿Te sientes que no lo sabes todo? ¿Te sientes mal por eso? Pues abandona ese sentimiento. NO te compares con nadie. Acabas de empezar y tienes muchas cosas por delante que aprender y asimilar. No te sientas mal. Estás aprendiendo. Estás creciendo.
